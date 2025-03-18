@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            background-color: #007bff; /* Blue header */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .banner {
+            background-color: #64b5f6; /* Lighter blue banner */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .banner .title {
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+        }
+        .banner .subtitle {
+            font-size: 1em;
+            margin-top: 5px;
+            border-top: 1px solid white;
+            padding-top: 5px;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        .dialogue {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: right;
+            font-style: italic;
+        }
+        .dropdown {
+            margin-bottom: 20px;
+        }
+        .dropdown select {
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+    <script>
+        function updateActivities() {
+            //Not needed for this workshop.
+        }
+
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <h1>Playbook - Taller de Innovación - Sesión 1</h1>
+</div>
+
+<div class="container">
+  <h2 id="selected-time" class="time-title">Tiempo efectivo de taller: 40 minutos</h2>
+
+<!-- -------------------------------------------------Espacio para Actividades --------------------------------------------------------- -->
+<!-- Actividad 1 -->
+
+<div id="activity-1" class="activity">
+  <div class="banner" onclick="toggleContent('intro_taller')">
+    <div class="title">Introducción al Taller: Aventura ODS ⏰ Tiempo: 5 minutos</div>
+        <div class="subtitle">Preparando el Terreno para la Innovación Sostenible</div>
+  </div>
+  <div id="intro_taller" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (2 minutos):</strong> Bienvenida y Propósito. Proyectar Diapositiva 2</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Bienvenidos al taller 'Aventura ODS'.  Olvídense de las clases tradicionales; esto es un laboratorio de ideas, un espacio donde ustedes, como agentes de cambio, van a explorar cómo la tecnología puede resolver problemas reales y urgentes. No estamos hablando de teoría abstracta, sino de soluciones tangibles que pueden impactar positivamente al mundo. Este taller trata de empoderarlos, de darles las herramientas y la mentalidad para que se conviertan en innovadores TECH4GOOD."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (3 minutos):</strong> Metodología y Formato. Proyectar Diapositiva 3</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Durante las próximas cuatro sesiones, vamos a trabajar en un formato intensivo y colaborativo.  No habrá exámenes ni calificaciones, pero sí habrá retos, prototipos y mucha discusión.  Nos guiaremos por los principios WAGI: 'Crear un Espacio Seguro', donde la experimentación y el error son parte del aprendizaje; 'Dream BIG', porque las ideas audaces son las que cambian el mundo; 'Curiosidad', porque la innovación nace de preguntar '¿y por qué no?'; y 'Do Good', porque la tecnología debe usarse para el bien común. Olvídense de ser estudiantes pasivos; aquí, ustedes son los protagonistas.  Cada sesión será un paso en un proceso estructurado, pero flexible, donde la creatividad y el pensamiento crítico son fundamentales. Vamos a explorar problemas, a conectar con las necesidades humanas, a generar ideas, a construir prototipos y a presentar soluciones. Y lo más importante: vamos a aprender haciendo."</td>
+            </tr>
+        </table>
+  </div>
+</div>
+
+<!-- Actividad 2 -->
+<div id="activity-2" class="activity">
+    <div class="banner" onclick="toggleContent('formacion_equipos')">
+        <div class="title"> Formación de Equipos: Detectives en Acción ⏰ Tiempo: 5 minutos</div>
+        <div class="subtitle">Creando los Equipos de Innovación TECH4GOOD</div>
+    </div>
+    <div id="formacion_equipos" class="content">
+          <table>
+            <tr>
+                <td><strong>PASO 1 (5 minutos):</strong> Organización de Equipos. Proyectar Diapositiva 4</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Bien, es hora de formar los equipos de 'Detectives TECH4GOOD'.  Pero no se trata de juntarse con sus amigos de siempre.  Busquen la diversidad de habilidades y perspectivas.  ¿Quién es bueno para investigar? ¿Quién tiene facilidad para dibujar o visualizar ideas? ¿Quién es un comunicador nato? ¿Quién tiene una mente analítica?  La innovación prospera en la diversidad. Formen equipos de máximo cuatro personas, buscando esa mezcla de talentos.  Este no es un grupo de amigos; es un equipo de alto rendimiento con una misión importante.  Tienen cinco minutos para organizarse."</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 3 -->
+<div id="activity-3" class="activity">
+    <div class="banner" onclick="toggleContent('dream_sketch')">
+         <div class="title"> Dream Sketch ODS: Visualizando el Futuro ⏰ Tiempo: 7 minutos</div>
+          <div class="subtitle">Dibujando un Futuro Sostenible con Tecnología.</div>
+    </div>
+    <div id="dream_sketch" class="content">
+          <table>
+                <tr>
+                    <td><strong>PASO 1 (2 minutos):</strong> Introducción al Dream Sketch. Proyectar Diapositiva 5</td>
+                    <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de atacar los problemas, necesitamos una visión inspiradora.  Necesitamos soñar en grande.  El 'Dream Sketch ODS' es precisamente eso: una oportunidad para visualizar un futuro donde la tecnología ha ayudado a resolver los desafíos más apremiantes de la humanidad, alineados con los Objetivos de Desarrollo Sostenible. No se trata de ser realistas, sino de ser visionarios."</td>
+                </tr>
+                <tr>
+                    <td><strong>PASO 2 (3 minutos):</strong> Creación del Dream Sketch. Proyectar Diapositiva 6</td>
+                    <td><strong>DIÁLOGO SUGERIDO:</strong> "Tomen sus hojas y sus materiales.  No quiero ver obras de arte perfectas; quiero ver ideas audaces.  ¿Cómo se ve un mundo donde la pobreza es historia? ¿Dónde la energía es limpia y accesible para todos? ¿Dónde las ciudades son sostenibles y resilientes?  Dibujen, esquematicen, usen palabras clave... lo que sea necesario para plasmar su visión.  No se limiten a lo que existe hoy; imaginen lo que *podría* existir.  Recuerden, este es un ejercicio de imaginación radical. Tienen tres minutos."</td>
+              </tr>
+                <tr>
+                    <td><strong>PASO 3 (2 minutos):</strong> Compartir y Conectar (Opcional, pero recomendado). Proyectar Diapositiva 7</td>
+                    <td><strong>DIÁLOGO SUGERIDO:</strong> "Tiempo. Ahora, vamos a hacer algo un poco diferente. En lugar de solo presentar sus dibujos, quiero que cada equipo elija *un* elemento de su Dream Sketch que les parezca particularmente poderoso o inspirador. Puede ser una tecnología específica, una solución innovadora, o incluso una emoción que hayan capturado. Compartan ese elemento clave con el grupo, pero en *una sola frase*.  El objetivo es crear una 'constelación' de ideas inspiradoras que nos sirvan de combustible para las próximas sesiones. No se trata de explicar todo el dibujo, sino de capturar la esencia."</td>
+                </tr>
+          </table>
+    </div>
+</div>
+
+<!-- Actividad 4 -->
+
+<div id="activity-4" class="activity">
+    <div class="banner" onclick="toggleContent('seleccion_ods')">
+        <div class="title"> Selección de ODS y Combinaboard ODS: El Desafío ⏰ Tiempo: 18 minutos</div>
+        <div class="subtitle">Eligiendo una Misión y Creando un Mapa Visual de Inspiración.</div>
+    </div>
+    <div id="seleccion_ods" class="content">
+        <table>
+           <tr>
+                <td><strong>PASO 1 (5 minutos):</strong> Presentación de los ODS y Elección. Proyectar Diapositiva 8</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora, vamos a conectar esos sueños con una realidad concreta.  Les presento los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas. (Mostrar la infografía o presentación visual de los ODS, previamente preparada).  Estos 17 objetivos son un llamado a la acción global para erradicar la pobreza, proteger el planeta y asegurar la paz y la prosperidad para todos. No son solo palabras bonitas; son metas concretas, medibles y con plazos definidos.  Cada equipo elegirá *un* ODS como su 'misión' para este taller.  Pero no elijan a la ligera.  Piensen en cuál de estos objetivos les resuena más, cuál les provoca una reacción visceral, cuál les hace decir: '¡Esto es algo en lo que quiero trabajar!'. Tienen 5 minutos."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (10 minutos):</strong> Creación del Combinaboard ODS. Proyectar Diapositiva 9</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Bien, detectives.  Ahora que tienen su ODS, es hora de construir su 'Combinaboard ODS'.  Esto no es solo un collage; es un mapa visual de su misión.  Reúnan imágenes, frases, palabras clave, datos, cualquier cosa que represente el ODS que eligieron, los problemas que aborda y, crucialmente, las *tecnologías* que podrían ser parte de la solución.  No se limiten a lo obvio.  Busquen conexiones inesperadas.  Piensen en robótica, en internet de las cosas, en inteligencia artificial, en biotecnología...  ¿Cómo podrían estas tecnologías, y otras que ni siquiera imaginamos todavía, ayudar a resolver los problemas asociados con su ODS? Sean detectives visuales. Busquen la inspiración en todas partes. Este Combinaboard será su brújula, su fuente de ideas, su recordatorio constante del 'por qué' de su misión. ¡Tienen 10 minutos! Y recuerden la consigna clave: ¡Cuanto más visual y más inspirador, mejor!"</td>
+           </tr>
+            <tr>
+               <td><strong>PASO 3 (3 minutos):</strong> Presentación y Conexión (Opcional, pero recomendado). Proyectar Diapositiva 10</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tiempo. Ahora, cada equipo presentará brevemente su Combinaboard. Pero, al igual que con el Dream Sketch, quiero que se enfoquen en *un* elemento clave.  Elijan la imagen, la frase, la tecnología, el dato... lo que sea que les parezca más *poderoso* y *relevante* para su ODS. Y expliquen por qué. ¿Qué problema específico aborda? ¿Qué tipo de solución tecnológica sugiere?  El objetivo es crear una 'red' de problemas y posibles soluciones, interconectados entre todos los equipos.  Recuerden, la innovación a menudo surge de la combinación de ideas aparentemente dispares."</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- -------------------------------------------------Corte por extensión --------------------------------------------------------- -->
+<!-- -------------------------------------------------Continuación por extensión --------------------------------------------------------- -->
+
+<!-- Actividad 5 -->
+<div id="activity-5" class="activity">
+    <div class="banner" onclick="toggleContent('framing_inicial')">
+        <div class="title"> Framing Inicial del Problema: Las 5 Preguntas Clave ⏰ Tiempo: 5 minutos</div>
+        <div class="subtitle">Definiendo el Problema con Precisión y Profundidad</div>
+    </div>
+    <div id="framing_inicial" class="content">
+        <table>
+           <tr>
+               <td><strong>PASO 1 (1 minuto):</strong> Introducción al Framing. Proyectar Diapositiva 11</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Detectives, ya tienen su ODS, su Combinaboard... ahora es el momento de *enmarcar* el problema.  'Framing' significa definir el problema de una manera clara, precisa y, crucialmente, *accionable*.  No se trata solo de decir 'hay pobreza'.  Se trata de entender *qué tipo* de pobreza, *dónde*, *quiénes* la sufren, *cuándo* es más aguda y, sobre todo, *por qué* existe. Para esto, usaremos una herramienta poderosa: las 5 Preguntas de Detective, las famosas 5 Ws."</td>
+            </tr>
+           <tr>
+               <td><strong>PASO 2 (4 minutos):</strong> Aplicación Guiada de las 5 Ws. Proyectar Diapositiva 12</td>
+              <td><strong>DIÁLOGO SUGERIDO:</strong> "Vamos a usar estas preguntas como una lupa, para enfocar nuestra atención en los detalles cruciales.  (Mostrar tarjetas visuales con símbolos para cada pregunta).  Y lo haremos de forma colaborativa. Yo guiaré el proceso, pero ustedes, como expertos en su ODS, aportarán las respuestas.
+
+                *   **¿Quién?** (Mostrar tarjeta visual con siluetas de personas diversas). No se trata solo de decir 'los pobres'.  ¿Son niños? ¿Son mujeres? ¿Son comunidades indígenas? ¿Son personas mayores? ¿Son personas con discapacidad?  Sean específicos.  Cuanto más específico sea el 'quién', más fácil será encontrar soluciones.
+
+                *   **¿Qué?** (Mostrar tarjeta visual con un signo de interrogación).  ¿Cuál es *exactamente* el problema que quieren resolver?  ¿Es la falta de acceso a agua potable? ¿Es la desnutrición infantil? ¿Es la falta de oportunidades educativas?  No se queden en la superficie.  Profundicen.
+
+                *   **¿Dónde?** (Mostrar tarjeta visual con un mapa/casa).  ¿Dónde ocurre este problema con mayor intensidad? ¿En una región específica de México? ¿En zonas rurales? ¿En zonas urbanas marginadas?  La ubicación geográfica es clave para entender el contexto y las posibles soluciones.
+
+                *   **¿Cuándo?** (Mostrar tarjeta visual con un reloj).  ¿Este problema es constante, o es más agudo en ciertas épocas del año? ¿Hay algún evento o situación que lo empeore?  Entender la temporalidad del problema nos ayuda a diseñar soluciones más efectivas.
+
+                *   **¿Por qué?** (Mostrar tarjeta visual con un corazón y un cerebro).  Esta es la pregunta más importante.  ¿Por qué existe este problema?  ¿Cuáles son las *causas raíz*?  No se queden con las respuestas obvias.  Profundicen.  ¿Hay factores económicos, sociales, culturales, ambientales, políticos, tecnológicos que contribuyen al problema? Este 'por qué' es la clave para encontrar soluciones *duraderas*.
+
+                (Mientras se discuten las 5 Ws, el facilitador anota las respuestas clave de forma visual, usando símbolos, dibujos y palabras clave, en un lugar visible para todos, idealmente cerca del Combinaboard ODS correspondiente). El objetivo es crear un 'mapa mental' colectivo del problema, que sea visualmente atractivo y fácil de entender."</td>
+           </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 6-->
+<div id="activity-6" class="activity">
+  <div class="banner" onclick="toggleContent('cierre')">
+        <div class="title"> Cierre de Sesión: Preparando el Viaje ⏰ Tiempo: 3 minutos</div>
+        <div class="subtitle">Recapitulando, Reflexionando y Anticipando la Próxima Aventura.</div>
+  </div>
+  <div id="cierre" class="content">
+        <table>
+           <tr>
+               <td><strong>PASO 1 (2 minutos):</strong> Recapitulación y Reflexión. Proyectar Diapositiva 13</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Detectives, hoy han dado un paso gigante. Han formado sus equipos, han elegido su ODS, han creado sus Combinaboards, llenos de imágenes poderosas y preguntas clave, y han comenzado a enmarcar el problema con las 5 Ws. Han pasado de la inspiración a la definición.  Han empezado a transformar una idea abstracta en un desafío concreto.  Tómense un momento para reflexionar sobre lo que han aprendido hoy.  ¿Qué les sorprendió?  ¿Qué les emocionó? ¿Qué les preocupó?  Este es el comienzo de un viaje, y cada paso cuenta."</td>
+            </tr>
+           <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Anticipación de la Siguiente Sesión. Proyectar Diapositiva 14</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "En la próxima sesión, 'Llegando a la Isla de la Compasión ODS', nos sumergiremos en el corazón del problema.  Usaremos la herramienta 'Walk in Other's Shoes ODS' para desarrollar una empatía profunda con las personas afectadas por el problema que han elegido. Y aprenderemos a usar el 'Árbol de Problemas Lúdico' para analizar las causas y efectos de una manera visual y creativa. Prepárense para conectar con las emociones, para entender las necesidades humanas y para ver el problema desde una perspectiva completamente nueva. ¡La aventura continúa!"</td>
+            </tr>
+        </table>
+  </div>
+</div>
+
+<!-- -------------------------------------------------Espacio para Actividades --------------------------------------------------------- -->
+</div>
+</body>
+</html>
